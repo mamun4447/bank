@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+</head>
+<body>
+    <header>
+      <h1 class="text-center mt-5">
+        Get some <span class="text-info">Money</span>!!!
+      </h1>
+    </header>
+    <main>
+        <section class="container  my-5">
+            <div class="grid row ">
+                <div class="col py-5 ps-5  rounded mx-2 bg-info text-white">
+                    <h5>Deposite</h5>
+                    <h2 >$ <span id="deposite-total">00</span> </h2>
+                </div>
+                <div class="col py-5 ps-5 rounded mx-2 bg-secondary text-white">
+                    <h5 class="">Withdrow</h5>
+                    <h2 >$ <span id="withdrow-total">00</span> </h2>
+                </div>
+                <div class="col py-5 ps-5 rounded mx-2 bg-primary text-white">
+                    <h5 class="">Balance</h5>
+                    <h2 >$ <span id="balance-total">1240</span> </h2>
+                </div>
+
+            </div>
+        </section>
+         <section class="container  my-5">
+            <div class="grid row ">
+                <div class="col py-5 ps-5  rounded mx-2 bg-danger text-white">
+                    <h5>Please deposite</h5>
+
+                    <input class="rounded p-1" type="text" name="" id="depositeAmount" placeholder="$ amount you want to deposite"><br>
+
+                    <button class="btn btn-info my-3" id="deposite">Deposite</button>
+                </div>
+                <div class="col py-5 ps-5 rounded mx-2 bg-success text-white">
+                    <h5 class="">Please Withdrow</h5>
+                    <input class="rounded p-1" type="text" name="" id="withdrowAmount" placeholder="$ amount you want to Withdrow"><br>
+                    <button class="btn btn-info my-3 " id="withdrow">Withdrow</button>
+                </div>
+                
+
+            </div>
+        </section>
+    </main>
+
+    <script src="deposite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
